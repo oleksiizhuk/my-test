@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="head">
+            <h2 class="title">irregular verbs</h2>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <div class="main">
+
+            <div class="center">
+                <div class="start">
+                    <div class="start__button">
+                        <button class="button-start btn" id="button-start">start</button>
+                    </div>
+                    <div class="start__params">
+                        <input type="number" min="1" max="129" value="1" placeholder="1">
+                        <input type="number" min='2' max="20" value="20" placeholder="130">
+                    </div>
+                </div>
+
+
+                <div class="verb-block">
+                    <div class="verb-test">
+                        <input type="text" class="verb-1 inputVerb" id="verb-1">
+                        <input type="text" class="verb-2 inputVerb" id="verb-2">
+                        <input type="text" class="verb-3 inputVerb" id="verb-3">
+                        <input type="text" class="translate inputVerb" id="translate">
+                    </div>
+                    <button id="check">Проверить</button>
+                </div>
+
+
+            </div>
+
+            <div class="right">
+                <div class="result-block">
+                    <p class="correct" id="correct">correct - <span id="correct_span">0</span></p>
+                    <p class="wrong" id="wrong">wrong <span id="wrong_span">0</span></p>
+                </div>
+                <div class="report" id="report">
+                    <!--<div class="reportQuestion">
+                        <p class="reportQuestion1">be</p>
+                        <p class="reportQuestion2">was</p>
+                        <p class="reportQuestion3">been</p>
+                        <p class="reportQuestion4">быть</p>
+                    </div>
+                    <div class="reportQuestion">
+                        <p class="colorWordCorrect">be</p>
+                        <p>was</p>
+                        <p class="colorWordWrong">been</p>
+                        <p>быть</p>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/index.js"></script>
+</body>
+</html>

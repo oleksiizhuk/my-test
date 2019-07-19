@@ -1,0 +1,86 @@
+@import "fonts/fonts.sass"
+@import "normalize/normalize.css"
+
+body
+  padding: 0
+  margin: 0
+  background: #e1e5ea
+
+.container
+  max-width: 1080px
+  position: relative
+  margin-left: auto
+  margin-right: auto
+  padding-right: 15px
+  padding-left: 15px
+
+.main
+  display: flex
+.center
+  flex: 0 0 60%
+.right
+  margin-left: 10px
+  flex: 0 0 40%
+
+.title
+  text-align: center
+  border-bottom: 5px solid #55a5d2
+  padding: 0 0 .5em 0
+  font-size: 2.25em
+  font-family: Lato-Bold, sans-serif
+
+.start
+  display: flex
+  flex-direction: column
+  text-align: center
+.start__params
+  margin: 10px 0
+
+.reportQuestion
+  display: flex
+  justify-content: space-around
+  background-color: greenyellow
+  p
+    font-size: 16px
+    font-weight: 700
+
+.wrong
+  background-color: red
+.correct
+  background-color: greenyellow
+
+.btn
+  background: #87c9f5
+  background-image: linear-gradient(to bottom, #87c9f5, #306485)
+  border-radius: 21px
+  font-family: Arial
+  color: #ffffff
+  font-size: 20px
+  padding: 10px 20px 10px 20px
+  text-decoration: none
+  &:hover
+    background: #3cb0fd
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db)
+    text-decoration: none
+
+.verb-test
+  display: flex
+  justify-content: space-between
+  input
+    flex: 0 0 20%
+    width: 100%
+
+.inputVerb
+  font-size: 18px
+  color: #555
+  padding: 10px
+  line-height: 1.2
+  border-radius: 15px
+
+#check
+  margin-top: 16px
+
+.colorWordCorrect
+  color: blue
+.colorWordWrong
+  color: red

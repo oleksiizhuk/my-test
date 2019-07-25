@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="827bdcc9-5753-4d7b-b290-c0202062d0bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../react iregular verb/iregular-verb/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react iregular verb/iregular-verb/.idea/iregular-verb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react iregular verb/iregular-verb/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react iregular verb/iregular-verb/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react iregular verb/iregular-verb/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="827bdcc9-5753-4d7b-b290-c0202062d0bd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -77,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="304" />
     <option name="y" value="-8" />
     <option name="width" value="687" />
@@ -126,8 +120,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../udemy" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -154,16 +149,15 @@
       <option name="presentableId" value="Default" />
       <updated>1562571736776</updated>
       <workItem from="1562571738692" duration="28279000" />
-      <workItem from="1563272759772" duration="8910000" />
+      <workItem from="1563272759772" duration="8919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37189000" />
+    <option name="totallyTimeSpent" value="37198000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

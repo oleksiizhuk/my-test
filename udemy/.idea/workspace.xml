@@ -2,7 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25b82de8-0307-454d-a79d-db2a9ab52601" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../iregular verb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../iregular verb/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_object_spread/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_object_spread/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19 classes/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/19 classes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21 module in JS/export.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21 module in JS/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21 module in JS/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototype/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototype/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../question in onix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../question in onix/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array destructuring/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/array destructuring/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/.idea/todo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/yarn.lock" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,26 +47,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/object destructuring/index.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/21 module in JS/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            <state relative-caret-position="376">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/21 module in JS/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/object destructuring/index.html">
+        <entry file="file://$PROJECT_DIR$/21 module in JS/export.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="432">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -49,6 +99,16 @@
         <option value="$PROJECT_DIR$/spread оператор для массивов/index.js" />
         <option value="$PROJECT_DIR$/object destructuring/index.html" />
         <option value="$PROJECT_DIR$/object destructuring/index.js" />
+        <option value="$PROJECT_DIR$/array destructuring/index.js" />
+        <option value="$PROJECT_DIR$/17_object_spread/index.html" />
+        <option value="$PROJECT_DIR$/17_object_spread/index.js" />
+        <option value="$PROJECT_DIR$/prototype/index.html" />
+        <option value="$PROJECT_DIR$/prototype/index.js" />
+        <option value="$PROJECT_DIR$/19 classes/index.html" />
+        <option value="$PROJECT_DIR$/19 classes/index.js" />
+        <option value="$PROJECT_DIR$/21 module in JS/index.html" />
+        <option value="$PROJECT_DIR$/21 module in JS/index.js" />
+        <option value="$PROJECT_DIR$/21 module in JS/export.js" />
       </list>
     </option>
   </component>
@@ -63,12 +123,14 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="464" />
-    <option name="y" value="-25" />
-    <option name="width" value="592" />
-    <option name="height" value="689" />
+    <option name="x" value="2452" />
+    <option name="y" value="6" />
+    <option name="width" value="956" />
+    <option name="height" value="1006" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -82,32 +144,6 @@
               <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
               <item name="udemy" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="object destructuring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="Rest parameters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="spread оператор для массивов" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="todo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="todo" type="462c0819:PsiDirectoryNode" />
-              <item name="todo" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -115,8 +151,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="Q:/onix/onix/third_task/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/todo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -143,22 +180,20 @@
       <option name="presentableId" value="Default" />
       <updated>1563704518158</updated>
       <workItem from="1563704519622" duration="5008000" />
+      <workItem from="1564053410734" duration="6721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5008000" />
+    <option name="totallyTimeSpent" value="11729000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1912" y="19" width="1696" height="1026" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11532738" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16827503" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Quokka" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -166,29 +201,41 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24479495" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Quokka" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Rest параментры/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rest параментры/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Rest параментры/index.html" />
+    <entry file="file://$PROJECT_DIR$/Rest параментры/index.js" />
     <entry file="file://$PROJECT_DIR$/Rest parameters/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -230,7 +277,84 @@
     <entry file="file://$PROJECT_DIR$/object destructuring/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array destructuring/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17_object_spread/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17_object_spread/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array destructuring/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="32" selection-start-line="32" selection-end-line="40" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19 classes/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19 classes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/21 module in JS/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/21 module in JS/export.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/21 module in JS/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>

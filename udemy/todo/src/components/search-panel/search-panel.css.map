@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAa;EACX,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,CAAC;EACZ,YAAY,EAAE,GAAG",
+"sources": ["search-panel.sass"],
+"names": [],
+"file": "search-panel.css"
+}

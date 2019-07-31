@@ -23,10 +23,6 @@ export default class TodoListItem extends Component {
         });
     };
 
-    onDelete = () => {
-        console.log('press delete');
-    };
-
     onMarkImportant = () => {
         this.setState((state) => {
             return {

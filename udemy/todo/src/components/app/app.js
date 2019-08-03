@@ -9,7 +9,7 @@ import AddItem from '../add-Item';
 import './app.css';
 
 export default class App extends Component {
-
+    maxId = 100;
     state = {
         todoData: [
             {label: 'Drink Coffee', important: false, id: 1},
@@ -22,11 +22,9 @@ export default class App extends Component {
         this.setState(({todoData}) => {
             const idx = todoData.findIndex((el) => el.id === id);
             //todoData.splice(idx, 1); эта строка зло, нельзя менять текущий state его нужно скопировать и переприсвоить
-
             const before = todoData.slice(0, idx);
             const after = todoData.slice(idx + 1);
             const newArray = [...before, ...after];
-
             return {
                 todoData: newArray
             }
@@ -34,11 +32,10 @@ export default class App extends Component {
     };
 
     addItem = (text) => {
-        this.setState((state) => {
-            const {todoData} = state;
-            const newArray = [...todoData];
-            newArray.push({label: {text}, important: false, id: 1});
+        const newItem = {label: text, important: false, id: this.maxId++};
 
+        this.setState(({todoData} ) => {
+            const newArray = [...todoData, newItem];
             return {
                 todoData: newArray
             }
@@ -59,7 +56,7 @@ export default class App extends Component {
                     onDeleted={this.deleteItem}
                 />
                 <AddItem
-                onAddItem={this.addItem}
+                    onAddItem={this.addItem}
                 />
             </div>
         );

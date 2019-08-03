@@ -1,16 +1,19 @@
 import React, {Component} from 'react';
+import './add-item.css';
 
-export default class AddItem extends Component{
+export default class AddItem extends Component {
 
+/*    constructor(props) {
+        super(props)
+    }*/
 
     render() {
-        return(
-            <span>
-            <input/>
-                <button
-                    onClick={}
-                >Add Item</button>
-            </span>
+        return (
+            <div className='add-item'>
+                <button className='btn btn-outline-secondary'
+                        onClick={() => this.props.onAddItem('hello World')}>Add Item
+                </button>
+            </div>
         )
     }
 }

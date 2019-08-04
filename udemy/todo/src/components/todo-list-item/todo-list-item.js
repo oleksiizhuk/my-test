@@ -15,24 +15,8 @@ export default class TodoListItem extends Component {
         }
     }
 
-    onLabelClick = () => { // правильный подход
-        this.setState(({done}) => {
-            return {
-                done: !done
-            }
-        });
-    };
-
-    onMarkImportant = () => {
-        this.setState((state) => {
-            return {
-                important: !state.important
-            }
-        });
-    };
-
     onLabelDoubleClick() { // не правильный подход
-        console.log(`Done ${this.props.label}`);
+        console.log('onLabelDoubleClick');
     }
 
     render() {

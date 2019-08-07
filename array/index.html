@@ -14,22 +14,29 @@
 
 <div class="container">
     <section>
-        <h2 class="method">Array.concat()</h2>
+        <h2 class="method">Array.push()</h2>
 
         <h3>Сводка</h3>
-        <p>Метод concat() возвращает новый массив, состоящий из массива, на котором он был вызван, соединённого с
-            другими массивами и/или значениями, переданными в качестве аргументов.</p>
+        <p>Метод push() добавляет один или более элементов в конец массива и возвращает новую длину массива.</p>
 
         <h3>Синтаксис</h3>
-        <p>var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])</p>
+        <p>arr.push(element1, ..., elementN))</p>
 
         <h3>Примеры</h3>
-        <p>var array1 = ['a', 'b', 'c']; <br/>
-            var array2 = ['d', 'e', 'f'];<br/>
-            <br/>
-            console.log(array1.concat(array2));<br/>
-            // expected output: Array ["a", "b", "c", "d", "e", "f"]<br/>
+        <p>var sports = ['футбол', 'бейсбол']; <br/>
+            var total = sports.push('американский футбол', 'плавание');<br/>
+
+            console.log(sports); // ['футбол', 'бейсбол', 'американский футбол', 'плавание']<br/>
+            console.log(total); // 4<br/>
         </p>
+        <p>var vegetables = ['пастернак', 'картошка'];<br/>
+            var moreVegs = ['сельдерей', 'свёкла'];<br/>
+
+            // Сливает второй массив с первым<br/>
+            // Эквивалентно вызову vegetables.push('сельдерей', 'свёкла');<br/>
+            Array.prototype.push.apply(vegetables, moreVegs);<br/>
+
+            console.log(vegetables); // ['пастернак', 'картошка', 'сельдерей', 'свёкла']</p>
         <p>++++++++++++++++++++++</p>
         <hr>
     </section>
@@ -63,28 +70,63 @@
     </section>
 
     <section>
-        <h2 class="method">Array.Split()</h2>
+        <h2 class="method">Array.join()</h2>
 
         <h3>Сводка</h3>
-        <p>Метод concat() возвращает новый массив, состоящий из массива, на котором он был вызван, соединённого с
-            другими массивами и/или значениями, переданными в качестве аргументов.</p>
+        <p>Определяет строку, разделяющую элементы массива. В случае необходимости тип разделителя приводится к
+            типу<br/>
+            Строка. Если он не задан, элементы массива разделяются запятой ','. Если разделитель - пустая строка,<br/>
+            элементы массива ничем не разделяются в возвращаемой строке..</p>
 
         <h3>Синтаксис</h3>
-        <p>var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])</p>
+        <p>arr.join([separator])</p>
 
         <h3>Примеры</h3>
-        <p>var array1 = ['a', 'b', 'c']; <br/>
-            var array2 = ['d', 'e', 'f'];<br/>
-            <br/>
-            console.log(array1.concat(array2));<br/>
-            // expected output: Array ["a", "b", "c", "d", "e", "f"]<br/>
+        <p>var a = ['Ветер', 'Дождь', 'Огонь']; <br/>
+            var myVar1 = a.join(); // присвоит 'Ветер,Дождь,Огонь' переменной myVar1<br/>
+            var myVar2 = a.join(', '); // присвоит 'Ветер, Дождь, Огонь' переменной myVar2<br/>
+            var myVar3 = a.join(' + '); // присвоит 'Ветер + Дождь + Огонь' переменной myVar3<br/>
+            var myVar4 = a.join(''); // присвоит 'ВетерДождьОгонь' переменной myVar4<br/>
         </p>
 
+        <p>++++++++++++++++++++++</p>
         <hr>
     </section>
 
     <section>
-        <h2 class="method">Array.Join()</h2>
+        <h2 class="method"> Удалить елемент из массива</h2>
+
+        <h3>Пример</h3>
+        <p>let arr = ["I", "go", "home"]; <br/>
+            delete arr[1]; // удалить "go"<br/>
+            alert( arr[1] ); // undefined<br/>
+            // теперь arr = ["I", , "home"];<br/>
+            alert( arr.length ); // 3</p>
+
+        <h3>Пример</h3>
+        <p>let arr = ["Я", "изучаю", "JavaScript"];<br/>
+            arr.splice(1, 1); // начиная с позиции 1, удалить 1 элемент<br/>
+            alert( arr ); // осталось ["Я", "JavaScript"]</p>
+
+        <h3>Пример</h3>
+        <p>let arr = ["Я", "изучаю", "JavaScript", "прямо", "сейчас"];<br/>
+            // удалить 3 первых элемента и заменить их другими<br/>
+            arr.splice(0, 3, "Давай", "танцевать");<br/>
+            alert( arr ) // теперь ["Давай", "танцевать", "прямо", "сейчас"]</p>
+        <h3>Пример</h3>
+        <p>let arr = [1, 2, 5];<br/>
+            // начиная с индекса -1 (перед последним элементом)<br/>
+            // удалить 0 элементов,<br/>
+            // затем вставить числа 3 и 4<br/>
+            arr.splice(-1, 0, 3, 4);<br/>
+            alert( arr ); // 1,2,3,4,5</p>
+
+        <p>++++++++++++++++++++++</p>
+        <hr>
+    </section>
+
+    <section>
+        <h2 class="method">Array.concat()</h2>
 
         <h3>Сводка</h3>
         <p>Метод concat() возвращает новый массив, состоящий из массива, на котором он был вызван, соединённого с
@@ -100,9 +142,30 @@
             console.log(array1.concat(array2));<br/>
             // expected output: Array ["a", "b", "c", "d", "e", "f"]<br/>
         </p>
-
+        <p>++++++++++++++++++++++</p>
         <hr>
     </section>
+
+    <section>
+        <h2 class="method">Array.reverse()</h2>
+
+        <h3>Сводка</h3>
+        <p>Метод reverse() на месте обращает порядок следования элементов массива. Первый элемент массива становится
+            последним, а последний — первым..</p>
+
+        <h3>Синтаксис</h3>
+        <p>array.reverse()</p>
+
+        <h3>Примеры</h3>
+        <p>var myArray = ['один', 'два', 'три'];<br/>
+            myArray.reverse();<br/>
+
+            console.log(myArray) // ['три', 'два', 'один']br/><br/>
+        </p>
+        <p>++++++++++++++++++++++</p>
+        <hr>
+    </section>
+
 
     <section>
         <h2 class="method">Array.Splice()</h2>

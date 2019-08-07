@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cd3f460-326d-42bb-aa2b-50e0e1bb9c43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add-Item/.sass-cache/cc1358f474afdabdeb5596d381d72d754f6f59e9/add-item.sassc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-Item/.sass-cache/cc1358f474afdabdeb5596d381d72d754f6f59e9/add-item.sassc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add-Item/add-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-Item/add-item.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add-Item/add-item.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-Item/add-item.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add-Item/add-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-Item/add-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add-Item/add-item.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-Item/add-item.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo-list-item/todo-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo-list-item/todo-list-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo-list/todo-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo-list/todo-list.js" afterDir="false" />
-    </list>
+    <list default="true" id="9cd3f460-326d-42bb-aa2b-50e0e1bb9c43" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/git onix/onix/third_task" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -81,7 +71,7 @@
       <workItem from="1564737685819" duration="26000" />
       <workItem from="1564819145229" duration="5033000" />
       <workItem from="1564902660099" duration="6107000" />
-      <workItem from="1564912646553" duration="5429000" />
+      <workItem from="1564912646553" duration="5489000" />
     </task>
     <servers />
   </component>

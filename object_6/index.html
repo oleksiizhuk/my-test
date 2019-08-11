@@ -6,8 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="container">
 
 <section>
     <h2>Чем объект отличается от массива</h2>
@@ -53,6 +54,7 @@
 
 <section>
     <h2>Что такое this</h2>
+    <p>+</p>
 </section>
 
 <section>
@@ -97,18 +99,73 @@
 
 <section>
     <h2>Spread оператор</h2>
+    const user = {<br/>
+    name: 'aleks',<br/>
+    age: '26',<br/>
+    staus: 'user'<br/>
+    };<br/>
+
+    const admin ={<br/>
+    name: 'admin',<br/>
+    age: '',<br/>
+    status: 'admin'<br/>
+    };<br/>
+
+    const spreadExample = { ...user, ...admin};<br/>
+    const spreadExample1 = { ...admin, ...user};<br/>
+
+    console.log(spreadExample); //{name: "admin", age: "", staus: "user", status: "admin"}<br/>
+    console.log(spreadExample1); //{name: "aleks", age: "26", status: "admin", staus: "user"}<br/>
+
 </section>
 
 <section>
     <h2>Иммутабельность ознакомится с понятием</h2>
+    <p>+</p>
 </section>
 
 <section>
     <h2>for..in перебор свойств объекта</h2>
+    <p>Цикл for...in проходит через перечисляемые свойства объекта. Он пройдёт по каждому отдельному элементу.</p>
+    <p>var arr = ['a', 'b', 'c'];<br/>
+        console.log(Object.keys(arr)); // консоль: ['0', '1', '2']<br/>
+
+        // Массивоподобный объект<br/>
+        var obj = { 0: 'a', 1: 'b', 2: 'c' };<br/>
+        console.log(Object.keys(obj)); // консоль: ['0', '1', '2']<br/>
+
+        // Массивоподобный объект со случайным порядком ключей<br/>
+        var an_obj = { 100: 'a', 2: 'b', 7: 'c' };<br/>
+        console.log(Object.keys(an_obj)); // консоль: ['2', '7', '100']<br/>
+
+        // Свойство getFoo является не перечисляемым свойством<br/>
+        var my_obj = Object.create({}, { getFoo: { value: function() { return this.foo; } } });<br/>
+        my_obj.foo = 1;
+
+        console.log(Object.keys(my_obj)); // консоль: ['foo']<br/></p>
 </section>
 
 <section>
     <h2>Object.keys</h2>
+    <p>Метод Object.keys() возвращает массив из собственных перечисляемых свойств переданного объекта, в том же порядке,<br/>
+        в котором они бы обходились циклом for...in (разница между циклом и методом в том, что цикл перечисляет свойства<br/>
+        и из цепочки прототипов).<br/></p>
+    <p>var arr = ['a', 'b', 'c'];<br/>
+        console.log(Object.keys(arr)); // консоль: ['0', '1', '2']<br/>
+
+        // Массивоподобный объект<br/>
+        var obj = { 0: 'a', 1: 'b', 2: 'c' };<br/>
+        console.log(Object.keys(obj)); // консоль: ['0', '1', '2']<br/>
+
+        // Массивоподобный объект со случайным порядком ключей<br/>
+        var an_obj = { 100: 'a', 2: 'b', 7: 'c' };<br/>
+        console.log(Object.keys(an_obj)); // консоль: ['2', '7', '100']<br/>
+
+        // Свойство getFoo является не перечисляемым свойством<br/>
+        var my_obj = Object.create({}, { getFoo: { value: function() { return this.foo; } } });<br/>
+        my_obj.foo = 1;<br/>
+
+        console.log(Object.keys(my_obj)); // консоль: ['foo'<br/>]</p>
 </section>
 
 <section>
@@ -116,6 +173,27 @@
     <p>Метод Object.keys() возвращает массив из собственных перечисляемых свойств переданного объекта, в том же порядке,<br/>
         в котором они бы обходились циклом for...in (разница между циклом и методом в том, что цикл перечисляет свойства<br/>
         и из цепочки прототипов).<br/></p>
+
+    <p>const user = {<br/>
+        name: 'aleks',<br/>
+        age: '26',<br/>
+        staus: 'user'<br/>
+        };<br/>
+
+        const admin ={<br/>
+        name: 'admin',<br/>
+        age: '',<br/>
+        status: 'admin'<br/>
+        };<br/>
+
+        <span class="fs26 red">const userAdmin = Object.assign({},user, admin); // доминирующий обьект  admim(тоесть последний)<br/></span>
+    <hr>
+    <span class="fs26 red">const userAdmin1 = Object.assign({},admin, user);// доминирующий обьект  user(тоесть последний)<br/></span>
+    <hr>
+    <span class="fs26 red"> console.log(userAdmin); //{name: "admin", age: "", staus: "user", status: "admin"} <br/></span>
+    <hr>
+    <span class="fs26 red">console.log(userAdmin1);// {name: "aleks", age: "26", status: "admin", staus: "user"}<br/></span>
+    </p>
 </section>
 <script src="index.js"></script>
 </body>

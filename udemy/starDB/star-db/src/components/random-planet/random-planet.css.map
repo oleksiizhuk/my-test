@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAc;EACZ,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,IAAI;;AAEf,4BAA4B;EAC1B,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,IAAI;EACnB,YAAY,EAAE,IAAI;;AAEpB,0BAA0B;EACxB,MAAM,EAAE,aAAa;;AAEvB,+BAA+B;EAC7B,OAAO,EAAE,OAAM;;AAEjB,qCAAqC;EACnC,YAAY,EAAE,MAAK",
+"sources": ["random-planet.sass"],
+"names": [],
+"file": "random-planet.css"
+}

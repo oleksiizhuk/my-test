@@ -1,0 +1,12 @@
+import React,{Component} from 'react';
+import './planet-details.css'
+
+export default class planetDetails extends Component{
+
+
+    render() {
+        return (
+            <div></div>
+        )
+    }
+}

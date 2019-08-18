@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,eAAe;EACb,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;EAChB,cAAc,EAAE,GAAG;EACnB,OAAO,EAAE,IAAI;;AAGf,6BAA6B;EAC3B,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,aAAa,EAAE,IAAI;;AAGrB,gCAAgC;EAC9B,OAAO,EAAE,OAAM;;AAGjB,sCAAsC;EACpC,YAAY,EAAE,MAAK",
+"sources": ["person-details.sass"],
+"names": [],
+"file": "person-details.css"
+}

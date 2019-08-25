@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAgB;EACd,MAAM,EAAE,MAAM;;AAGd,sBAAK;EACH,SAAS,EAAE,IAAI;AACjB,qBAAI;EACF,OAAO,EAAE,KAAK;EACd,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,OAAO",
+"sources": ["error-indicator.sass"],
+"names": [],
+"file": "error-indicator.css"
+}

@@ -10,40 +10,40 @@ export default class SwapiServise {
         return await res.json()
     };
 
-    async getAllPeople() {
+    getAllPeople = async () => {
         const res = await this.getResource(`/people/`);
         return res.results.map(this._transformPerson);
-    }
+    };
 
-    async getPerson(id) {
+    getPerson = async (id) => {
         const person = await this.getResource(`/people/${id}/`);
         return this._transformPerson(person);
-    }
+    };
 
-    async getAllPlanets() {
+    getAllPlanets = async () => {
         const res = await this.getResource(`/planets/`);
         return res.results.map(this._transformPlanet);
-    }
+    };
 
-    async getPlanet(id) {
+    getPlanet = async (id) => {
         const planet = await this.getResource(`/planets/${id}/`);
         return this._transformPlanet(planet);
-    }
+    };
 
-    async getAllStarShips() {
+    getAllStarShips = async () => {
         const res = await this.getResource(`/starships/`);
-        return res.results.map(this._transformStarship);
-    }
+        return res.results.map(this._transformStarShip);
+    };
 
-    async getStarShip(id) {
-        const starship = await this.getResource(`/starships/${id}/`);
-        return this._transformStarship(starship);
-    }
+    getStarShip = async (id) => {
+        const starShip = await this.getResource(`/starships/${id}/`);
+        return this._transformStarShip(starShip);
+    };
 
-    _extractId(item) {
+    _extractId = (item) => {
         const idRegExp = /\/(\d*)\/$/;
         return item.url.match(idRegExp)[1];
-    }
+    };
 
     _transformPlanet = (planet) => {
         return {
@@ -55,17 +55,17 @@ export default class SwapiServise {
         }
     };
 
-    _transformStarship = (starship) => {
+    _transformStarShip = (starShip) => {
         return {
-            id: this._extractId(starship),
-            name: starship.name,
-            model: starship.model,
-            manufacturer: starship.manufacturer,
-            costInCredits: starship.costInCredits,
-            length: starship.length,
-            crew: starship.crew,
-            passengers: starship.passengers,
-            cargoCapacity: starship.cargoCapacity
+            id: this._extractId(starShip),
+            name: starShip.name,
+            model: starShip.model,
+            manufacturer: starShip.manufacturer,
+            costInCredits: starShip.costInCredits,
+            length: starShip.length,
+            crew: starShip.crew,
+            passengers: starShip.passengers,
+            cargoCapacity: starShip.cargoCapacity
         }
     };
 

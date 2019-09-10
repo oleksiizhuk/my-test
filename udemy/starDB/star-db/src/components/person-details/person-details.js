@@ -39,6 +39,8 @@ export default class personDetails extends Component {
         if (!this.state.person) {
             return <span>Select a person from a list</span>
         }
+        const test = this.props.children;
+        console.log(test);
         const {id, name, gender, birthYear, eyeColor} = this.state.person;
         return (
             <div className="person-details card">

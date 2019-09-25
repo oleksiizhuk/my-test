@@ -6,11 +6,13 @@ import ErrorButton from "../error-button";
 import ErrorIndicator from '../error-indicator'
 import ToggleRandomPlanet from '../toggle-random-planet';
 import PeoplePage from '../people-page';
+import ItemDetailts from '../itemDetails/itemDetails';
 
 import './app.css'
 import ItemList from "../item-list";
-import PersonDetails from "../person-details";
+import PersonDetails from "../itemDetails";
 import SwapiServise from "../../services/swapi-service";
+import Row from "../Row/Row";
 
 export default class app extends Component {
     swapiService = new SwapiServise();
@@ -25,7 +27,6 @@ export default class app extends Component {
     }
 
     componentDidCatch(error, errorInfo) {
-        console.log("componentDidCatch");
         this.setState({hasError: true})
     }
 
@@ -50,9 +51,31 @@ export default class app extends Component {
             );
         }
         const randomPlanet = showRandomPlanet ? <RandomPlanet/> : null;
+        const {getPerson, getStarShip, getPersonImage, getStarshipImage} = this.swapiService;
+        const personDetails = (
+            <ItemDetailts
+                itemId={11}
+                getData={getPerson}
+                getImageUrl={getPersonImage}
+            />
+        );
+
+        const starShipDetails = (
+            <ItemDetailts
+                itemId={5}
+                getData={getStarShip}
+                getImageUrl={getStarshipImage}
+            />
+
+        );
         return (
             <div>
                 <Header/>
+                <Row
+                    left={personDetails}
+                    right={starShipDetails}
+                />
+
                 {randomPlanet}
                 <ToggleRandomPlanet
                     onToggleRandomPlanet={this.toggleRandomPlanet}/>
@@ -76,6 +99,7 @@ export default class app extends Component {
                         />
                     </div>
                 </div>
+
 
                 <div className="row mb2">
                     <div className="col-md-6">

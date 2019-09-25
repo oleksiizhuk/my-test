@@ -1,46 +1,11 @@
 import React, {Component} from 'react';
-
-import './people-page.css';
 import ItemList from "../item-list";
-import PersonDetails from "../person-details";
+import PersonDetails from "../itemDetails";
 import ErrorIndicator from "../error-indicator";
 import SwapiServise from "../../services/swapi-service";
-import ErrorButton from '../error-button';
-
-const Row = ({left, right}) => {
-    return (
-
-        <div className="row mb2">
-            <div className="col-md-6">
-                {left}
-            </div>
-            <div className="col-md-6">
-                {right}
-            </div>
-        </div>
-    )
-};
-
-class ErrorBoundry extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            hasError: false
-        }
-    }
-
-    componentDidCatch(error, info) {
-        this.setState({hasError: true})
-    }
-
-    render() {
-        if (this.state.hasError) {
-            return <ErrorIndicator/>
-        }
-        return this.props.children;
-    }
-}
+import Row from "../Row/Row";
+import './people-page.css';
+import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
 
 export default class PeoplePage extends Component {
     swapiServise = new SwapiServise();
@@ -49,7 +14,6 @@ export default class PeoplePage extends Component {
         super(props);
         this.state = {
             selectedPerson: 3,
-            hasError: false
         }
     }
 
@@ -74,11 +38,11 @@ export default class PeoplePage extends Component {
             >
             </ItemList>;
         const personDetails = (
-            <ErrorBoundry>
+            <ErrorBoundary>
                 <PersonDetails
                     personId={selectedPerson}
                 />
-            </ErrorBoundry>
+            </ErrorBoundary>
         );
 
         return (

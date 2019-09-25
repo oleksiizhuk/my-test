@@ -1,17 +1,15 @@
 import React, {Component} from 'react';
-import './item-details.css'
-import SwapiServise from "../../services/swapi-service";
+import './itemDetails.css'
 import ErrorButton from "../error-button";
 
 export default class itemDetails extends Component {
 
-    swapeService = new SwapiServise();
-
     constructor(props) {
         super(props);
         this.state = {
-            person: null,
-            personId: null
+            item: null,
+            itemId: null,
+            image: null
         }
     }
 
@@ -20,33 +18,35 @@ export default class itemDetails extends Component {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        if (this.props.personId !== prevProps.personId) {
+        if (this.props.itemId !== prevProps.itemId) {
             this.updatePerson();
         }
     }
 
     updatePerson() {
-        const {personId} = this.props;
-        if (!personId) {
+        const {itemId, getData, getImageUrl} = this.props;
+        if (!itemId) {
             return;
         }
-        this.swapeService.getPerson(personId)
-            .then((person) => {
-                this.setState({person});
+        getData(itemId)
+            .then((item) => {
+                this.setState({
+                    item,
+                    image: getImageUrl(itemId)
+                });
             })
     }
 
     render() {
-        if (!this.state.person) {
+        const {item, image} = this.state;
+        if (!item) {
             return <span>Select a person from a list</span>
         }
-        const test = this.props.children;
-        console.log(test);
-        const {id, name, gender, birthYear, eyeColor} = this.state.person;
+        const {name, gender, birthYear, eyeColor} = this.state.item;
         return (
             <div className="person-details card">
                 <img className="person-image"
-                     src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`}
+                     src={image}
                      alt='character'
                 />
 

@@ -1,23 +1,26 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import HeroView from './components/heroView';
+import ButtonClick from './components/ButtonClick';
 
 const HomeView = ({
-  hero
+  hero,
+  onHandleClickButton, currentValue
 }) => {
-  console.log(typeof hero)
+  // eslint-disable-next-line no-console
+
   return (
-    <HeroView
-      hero={hero}
-    />
+    <>
+      <HeroView
+        hero={hero}
+      />
+      <ButtonClick
+        onHandleClickButton={onHandleClickButton}
+        currentValue={currentValue}
+      />
+    </>
   );
 };
 
-HomeView.propTypes = {
-  hero: PropTypes.array
-};
 
-HomeView.propTypes = {
-  hero: {}
-};
 export default HomeView;

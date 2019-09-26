@@ -7,8 +7,9 @@ export default class Home extends Component {
     // eslint-disable-next-line no-console
     console.log('constructor - используеться самый первый при создании компонента для инициализации state');
     this.state = {
-      hero: null,
+      hero: { name: 'test' },
       hasError: false,
+      currentValue: 0
     };
   }
 
@@ -16,18 +17,18 @@ export default class Home extends Component {
   static getDerivedStateFromProps() {
     // eslint-disable-next-line no-console
     console.log('getDerivedStateFromProps - является статической функцией и не имеет доступа к this -'
-            + 'вместо этого ожидается, что вы вернете объект, который будет объединен с будущим состоянием компонента '
-            + '(точно так же, как работа с setState!)\n'
-            + 'Функция используется, когда компонент обновляется, но также и когда он монтируется, '
-            + 'сразу после constructorвызова, поэтому вам больше не нужно использовать форму состояния свойства '
-            + 'конструктора или класса, если вы хотите установить начальное состояние из реквизита.');
+      + 'вместо этого ожидается, что вы вернете объект, который будет объединен с будущим состоянием компонента '
+      + '(точно так же, как работа с setState!)\n'
+      + 'Функция используется, когда компонент обновляется, но также и когда он монтируется, '
+      + 'сразу после constructorвызова, поэтому вам больше не нужно использовать форму состояния свойства '
+      + 'конструктора или класса, если вы хотите установить начальное состояние из реквизита.');
     return null;
   }
 
   componentDidMount() {
     // eslint-disable-next-line no-console
     console.log('componentDidMount - будет вызвана сразу после монтирования компоненты, в основном используется для '
-            + 'получения данных асинхронно (например от стороннего API)');
+      + 'получения данных асинхронно (например от стороннего API)');
     this.getResource('people', 3)
       .then((hero) => {
         this.setState({
@@ -39,9 +40,11 @@ export default class Home extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     // eslint-disable-next-line no-console
     console.log('shouldComponentUpdate - ');
-    console.log(nextProps.hero, nextState.hero);
-
-    if (nextProps.hero !== nextState.hero) {
+    const { hero, currentValue } = this.state;
+    if (hero !== nextState.hero) {
+      return true;
+    }
+    if (currentValue !== nextState.currentValue) {
       return true;
     }
     return false;
@@ -50,19 +53,25 @@ export default class Home extends Component {
   getSnapshotBeforeUpdate(prevProps, prevState) {
     // eslint-disable-next-line no-console
     console.log('getSnapshotBeforeUpdate - если пользователь прокручивает страницу вниз и добавляется новое сообщение, '
-        + 'экран может перемещаться и сделать пользовательский интерфейс сложнее в использовании.'
-        + ' Добавив, getSnapshotBeforeUpdateвы можете рассчитать текущую позицию прокрутки'
-        + ' и поддерживать ее через обновление DOM.\n'
-        + 'Даже если функция не является статичной, рекомендуется возвращать значение,'
-        + ' а не обновлять компонент.'
-        + ' Возвращенное значение будет передано в componentDidUpdateкачестве 3-го параметра.');
+      + 'экран может перемещаться и сделать пользовательский интерфейс сложнее в использовании.'
+      + ' Добавив, getSnapshotBeforeUpdateвы можете рассчитать текущую позицию прокрутки'
+      + ' и поддерживать ее через обновление DOM.\n'
+      + 'Даже если функция не является статичной, рекомендуется возвращать значение,'
+      + ' а не обновлять компонент.'
+      + ' Возвращенное значение будет передано в componentDidUpdateкачестве 3-го параметра.');
     return null;
   }
 
-  componentDidUpdate(nextProps, nextState) {
+  componentDidUpdate(prevProps, prevState) {
+    // eslint-disable-next-line no-console
+    console.log(prevState.currentValue, this.state.currentValue);
     // eslint-disable-next-line no-console
     console.log('componentDidUpdate - сраьатывает для обновления состояния');
-    return null;
+    const { currentValue } = this.state;
+    if (prevState.currentValue !== currentValue) {
+      return true;
+    }
+    return false;
   }
 
   componentDidCatch() {
@@ -74,17 +83,26 @@ export default class Home extends Component {
     console.log('componentWillUnmount - срабатывает перед размонтированием компонента');
   }
 
-  // для теста
+  // для теста componentDidMount and  shouldComponentUpdate
   getResource = async (url = 'people', id = 5) => {
     const res = await fetch(`https://swapi.co/api/${url}/${id}/`);
     return res.json();
   };
 
+  // для теста getDerivedStateFromProps
+  handleClickButton = () => {
+    const { currentValue } = this.state;
+    console.log('hundle');
+    this.setState({
+      currentValue: currentValue + 1
+    });
+  };
+
   render() {
     // eslint-disable-next-line no-console
     console.log('render');
-    const { hasError, hero } = this.state;
-    console.log(hero);
+    const { hasError, hero, currentValue } = this.state;
+    console.log(currentValue);
     if (hasError) {
       return (
         <p>error</p>
@@ -94,6 +112,9 @@ export default class Home extends Component {
     return (
       <HomeView
         hero={hero}
+
+        onHandleClickButton={this.handleClickButton}
+        currentValue={currentValue}
       />
     );
   }

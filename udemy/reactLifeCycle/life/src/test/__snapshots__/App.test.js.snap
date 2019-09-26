@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+Array [
+  <h2>
+    Header
+  </h2>,
+  <div>
+    test
+  </div>,
+  <footer
+    className="footer"
+  >
+    <div
+      className="container"
+    >
+      <span>
+        © Copyright 2019 by Oleksii Zhukk
+      </span>
+    </div>
+  </footer>,
+]
+`;

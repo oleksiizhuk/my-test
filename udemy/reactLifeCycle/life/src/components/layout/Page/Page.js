@@ -6,18 +6,18 @@ import Footer from '../Footer/Footer';
 import PageView from './PageView';
 
 export default class Page extends Component {
-    render() {
-        const { children } = this.props;
-        return (
-            <>
-                <Header />
-                <PageView childrens={children} />
-                <Footer />
-            </>
-        );
-    }
+  render() {
+    const { children } = this.props;
+    return (
+      <>
+        <Header />
+        <PageView childrens={children} />
+        <Footer />
+      </>
+    );
+  }
 }
 
 Page.propTypes = {
-    children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired
 };

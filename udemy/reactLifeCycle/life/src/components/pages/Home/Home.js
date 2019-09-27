@@ -64,7 +64,6 @@ export default class Home extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     // eslint-disable-next-line no-console
-    console.log(prevState.currentValue, this.state.currentValue);
     // eslint-disable-next-line no-console
     console.log('componentDidUpdate - сраьатывает для обновления состояния');
     const { currentValue } = this.state;
@@ -92,7 +91,6 @@ export default class Home extends Component {
   // для теста getDerivedStateFromProps
   handleClickButton = () => {
     const { currentValue } = this.state;
-    console.log('hundle');
     this.setState({
       currentValue: currentValue + 1
     });
@@ -102,7 +100,6 @@ export default class Home extends Component {
     // eslint-disable-next-line no-console
     console.log('render');
     const { hasError, hero, currentValue } = this.state;
-    console.log(currentValue);
     if (hasError) {
       return (
         <p>error</p>

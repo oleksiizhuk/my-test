@@ -1,6 +1,7 @@
+/*
 import React, {Component} from 'react';
-import ItemList from "../item-list";
-import PersonDetails from "../itemDetails";
+import ItemList from "../item-list/item-list";
+import PersonDetails from "../itemDetails/itemDetails";
 import ErrorIndicator from "../error-indicator";
 import SwapiServise from "../../services/swapi-service";
 import Row from "../Row/Row";
@@ -31,7 +32,7 @@ export default class PeoplePage extends Component {
         const itemList =
             <ItemList
                 onItemSelected={this.onPersonSelected}
-                onGetData={this.swapiServise.getAllPeople}
+               getData={this.swapiServise.getAllPeople}
                 renderItem={(i) => (
                     `${i.name} ${i.birthYear}`
                 )}
@@ -50,3 +51,4 @@ export default class PeoplePage extends Component {
         )
     }
 };
+*/

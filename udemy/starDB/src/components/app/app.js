@@ -4,97 +4,95 @@ import RandomPlanet from '../random-planet';
 import ErrorBoundry from '../ErrorBoundary/ErrorBoundary';
 import ItemDetails, {Record} from "../itemDetails/itemDetails";
 import SwapiService from "../../services/swapi-service";
+import DummySwapiService from "../../services/dummy-swapi-service";
 
+import {SwapiServiceProvider} from "../swapi-service-context";
 
 import {
-    PersonList,
-    PlanetList,
-    StarshipList
+  PersonList,
+  PlanetList,
+  StarshipList
 } from '../swComponents/item-lists';
 
 import {
-    PersonDetails,
-    PlanetDetails,
-    StarshipDetails,
+  PersonDetails,
+  PlanetDetails,
+  StarshipDetails,
 
 } from '../swComponents/details';
 
 import './app.css';
 
 export default class App extends Component {
+  swapiService = new SwapiService();
+  state = {
+    showRandomPlanet: true
+  };
 
-    swapiService = new SwapiService();
+  toggleRandomPlanet = () => {
+    this.setState((state) => {
+      return {
+        showRandomPlanet: !state.showRandomPlanet
+      }
+    });
+  };
 
-    state = {
-        showRandomPlanet: true
-    };
+  render() {
 
-    toggleRandomPlanet = () => {
-        this.setState((state) => {
-            return {
-                showRandomPlanet: !state.showRandomPlanet
-            }
-        });
-    };
+    const planet = this.state.showRandomPlanet ?
+      <RandomPlanet/> :
+      null;
 
-    render() {
+    const {
+      getPerson,
+      getStarship,
+      getPersonImage,
+      getStarshipImage,
+      getAllPeople,
+      getAllPlanets
+    } = this.swapiService;
 
-        const planet = this.state.showRandomPlanet ?
-            <RandomPlanet/> :
-            null;
+    const personDetails = (
+      <ItemDetails
+        itemId={11}
+        getData={getPerson}
+        getImageUrl={getPersonImage}>
 
-        const {
-            getPerson,
-            getStarship,
-            getPersonImage,
-            getStarshipImage,
-            getAllPeople,
-            getAllPlanets
-        } = this.swapiService;
+        <Record field="gender" label="Gender"/>
+        <Record field="eyeColor" label="Eye Color"/>
 
-        const personDetails = (
-            <ItemDetails
-                itemId={11}
-                getData={getPerson}
-                getImageUrl={getPersonImage}>
+      </ItemDetails>
+    );
 
-                <Record field="gender" label="Gender"/>
-                <Record field="eyeColor" label="Eye Color"/>
+    const starshipDetails = (
+      <ItemDetails
+        itemId={5}
+        getData={getStarship}
+        getImageUrl={getStarshipImage}>
 
-            </ItemDetails>
-        );
+        <Record field="model" label="Model"/>
+        <Record field="length" label="Length"/>
+        <Record field="costInCredits" label="Cost"/>
+      </ItemDetails>
+    );
 
-        const starshipDetails = (
-            <ItemDetails
-                itemId={5}
-                getData={getStarship}
-                getImageUrl={getStarshipImage}>
+    return (
+      <ErrorBoundry>
+        <SwapiServiceProvider value={this.swapiService}>
+          <div className="stardb-app">
+            <Header/>
 
-                <Record field="model" label="Model"/>
-                <Record field="length" label="Length"/>
-                <Record field="costInCredits" label="Cost"/>
-            </ItemDetails>
-        );
+            <PersonDetails itemId={11}/>
+            <PlanetDetails itemId={5}/>
+            <StarshipDetails itemId={9}/>
 
-        return (
-            <ErrorBoundry>
-                <div className="stardb-app">
-                    <Header/>
+            <PersonList/>
+            <StarshipList/>
+            <PlanetList/>
 
-                    <PersonDetails itemId={11}/>
-
-                    <PlanetDetails itemId={5}/>
-
-                    <StarshipDetails itemId={9}/>
-
-                    <PersonList/>
-
-                    <StarshipList/>
-
-                    <PlanetList/>
-
-                </div>
-            </ErrorBoundry>
-        );
-    }
+          </div>
+        </SwapiServiceProvider>
+      </ErrorBoundry>
+    );
+  }
 }
